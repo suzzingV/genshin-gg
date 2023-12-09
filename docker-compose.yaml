@@ -1,0 +1,17 @@
+version: "3.8" #yaml 파일 포맷의 버전
+services:
+  mysql-container:
+    image: mysql:latest
+    container_name: mysql-container
+    restart: always
+    volumes:
+      - mysql-vol:/app
+    ports:
+      - "13306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: genshin_gg
+      MYSQL_ROOT_HOST: '%'
+volumes:
+  mysql-vol:
+    external: true
