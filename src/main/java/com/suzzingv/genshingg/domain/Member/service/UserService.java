@@ -1,4 +1,4 @@
-package com.suzzingv.genshingg.domain.User.service;
+package com.suzzingv.genshingg.domain.Member.service;
 
 import org.springframework.stereotype.Service;
 

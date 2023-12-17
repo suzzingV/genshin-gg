@@ -1,16 +1,11 @@
-package com.suzzingv.genshingg.domain.User.entity;
+package com.suzzingv.genshingg.domain.Member.entity;
 
-import com.suzzingv.genshingg.domain.Hero.entity.Hero;
 import jakarta.persistence.*;
 import lombok.Getter;
-import lombok.Setter;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Getter
-public class User {
+public class Member {
     @Id @GeneratedValue
     @Column(name = "USER_ID")
     private Long id;

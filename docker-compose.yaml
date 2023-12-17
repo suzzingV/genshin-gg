@@ -9,7 +9,7 @@ services:
     ports:
       - "13306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: 1234
       MYSQL_DATABASE: genshin_gg
       MYSQL_ROOT_HOST: '%'
 volumes:
